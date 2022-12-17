@@ -168,7 +168,8 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav__link:focus, .nav__link:hover {
+.nav__link:focus,
+.nav__link:hover {
   color: var(--accent-color);
 }
 
@@ -237,7 +238,8 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-contact__link:hover, .header-contact__link:focus {
+.header-contact__link:hover,
+.header-contact__link:focus {
   color: var(--accent-color);
 }
 
@@ -288,7 +290,8 @@ img {
   cursor: pointer;
 }
 
-.menu-open:hover, .menu-open:focus {
+.menu-open:hover,
+.menu-open:focus {
   fill: var(--accent-color);
 }
 
@@ -309,7 +312,8 @@ img {
   cursor: pointer;
 }
 
-.menu-close:hover, .menu-close:focus {
+.menu-close:hover,
+.menu-close:focus {
   fill: var(--accent-color);
 }
 
@@ -326,7 +330,8 @@ img {
   color: #212121;
 }
 
-.mob-menu-list__link:focus, .mob-menu-list__link:hover {
+.mob-menu-list__link:focus,
+.mob-menu-list__link:hover {
   color: var(--accent-color);
 }
 
@@ -340,7 +345,7 @@ img {
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
-  font-size: 34px;
+  font-size: 20px;
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: #2196f3;
@@ -395,7 +400,12 @@ img {
   margin-left: auto;
   margin-right: auto;
   background-color: var(--hero-background-color);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero-mobile.jpg");
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../img/hero-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -404,33 +414,64 @@ img {
   padding-bottom: 0px;
 }
 
-@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mobile2x.jpg);
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/hero-mobile2x.jpg);
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-tablet.jpg");
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero-tablet.jpg");
   }
 }
 
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-tablet2x.jpg");
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero-tablet2x.jpg");
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-desctop.jpg");
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero-desctop.jpg");
   }
 }
 
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1200px) and (min-resolution: 192dpi),
+  screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-desctop2x.jpg");
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero-desctop2x.jpg");
   }
 }
 
@@ -490,10 +531,12 @@ img {
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero__btn:hover, .hero__btn:focus {
+.hero__btn:hover,
+.hero__btn:focus {
   background-color: var(--white-text-color);
   color: var(--accent-color);
 }
@@ -684,7 +727,8 @@ img {
 }
 
 .team-list__item {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: var(--white-background-color);
 }
 
@@ -753,10 +797,12 @@ img {
   border-radius: 50%;
   color: #afb1b8;
   background-color: #ffffff;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-list__social-link:hover, .team-list__social-link:focus {
+.team-list__social-link:hover,
+.team-list__social-link:focus {
   color: #ffffff;
   background-color: var(--accent-color);
 }
@@ -812,10 +858,12 @@ img {
 
 .customers__item {
   height: 90px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.customers__item:focus, .customers__item:hover {
+.customers__item:focus,
+.customers__item:hover {
   color: var(--accent-color);
   border-color: var(--accent-color);
 }
@@ -846,10 +894,12 @@ img {
   color: #afb1b8;
   background-color: #fff;
   padding: 16px 32px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.customers__link:focus, .customers__link:hover {
+.customers__link:focus,
+.customers__link:hover {
   color: var(--accent-color);
   border-color: var(--accent-color);
 }
@@ -919,7 +969,8 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-contact__link:hover, .footer-contact__link:focus {
+.footer-contact__link:hover,
+.footer-contact__link:focus {
   color: var(--accent-color);
 }
 
@@ -979,10 +1030,12 @@ img {
   border-radius: 50%;
   color: #ffffff;
   background-color: #ffffff10;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-list__link:hover, .footer-list__link:focus {
+.footer-list__link:hover,
+.footer-list__link:focus {
   color: #ffffff;
   background-color: var(--accent-color);
 }
@@ -1167,13 +1220,17 @@ img {
   background-color: var(--team-background-color);
   color: var(--primary-text-color);
   cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-btn:hover, .portfolio-btn:focus {
+.portfolio-btn:hover,
+.portfolio-btn:focus {
   background-color: var(--accent-color);
   color: var(--white-text-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-list {
@@ -1205,8 +1262,10 @@ img {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-item:hover, .portfolio-item:focus {
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+.portfolio-item:hover,
+.portfolio-item:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-border {
@@ -1238,7 +1297,8 @@ img {
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
   top: 0;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -1497,7 +1557,8 @@ textarea:focus {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-btn:focus, .form-btn:hover {
+.form-btn:focus,
+.form-btn:hover {
   background-color: #188ce8;
 }
 /*# sourceMappingURL=main.css.map */
